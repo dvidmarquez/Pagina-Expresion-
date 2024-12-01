@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #080202;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.swiper-button-prev::after {
+  font-size: 25px;
+}
+
+.swiper-button-next::after {
+  font-size: 25px;
+}
+
+.swiper-button-next {
+  color: rgb(155, 10, 10);
+}
+
+.swiper-button-prev {
+  color: rgb(155, 10, 10);
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(172, 172, 172);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(155, 10, 10);
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+}
+
+.menu-1 {
+  margin-right: 180px;
+}
+
+.menu-2 {
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-1 {
+  width: 0;
+}
+
+.logo-2 {
+  width: 200px;
+}
+
+.socials {
+  display: flex;
+}
+
+.social {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(155, 10, 10);
+  border-radius: 50%;
+}
+
+.social:hover {
+  background-color: rgb(155, 10, 10);
+}
+
+.social img {
+  margin: 8px 0 0 10px;
+  background-color: (155, 10, 10);
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 10px;
+  padding: 20px;
+  color: rgb(196, 196, 196);
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: rgb(155, 10, 10);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 0px;
+}
+
+.menu-label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  margin-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links h4 {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.liks ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.sobre-nosotros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.about-text {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-image {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+.sobre-nosotros h1 {
+    font-size: 2.5em;
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-text p {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+.quote {
+    font-style: italic;
+    font-size: 1.2em;
+    border-left: 4px solid #ff0000;
+    padding-left: 20px;
+    margin: 30px 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+@media(max-width: 1010px) {
+
+  .menu {
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .menu-2 {
+    display: none;
+  }
+
+  .logo-1 {
+    width: 200px;
+  }
+
+  .logo-2 {
+    width: 0;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header-content {
+    padding: 30px;
+    margin-top: 100px;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social img {
+    margin: 8px 0 0 0;
+  }
+
+  .footer{
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .links h4{
+    margin: 25px 0px 10px 0px;
+  }
+  .menu-icono {
+    width: 25px;
+  }
+}
+
+
